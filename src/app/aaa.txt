@@ -1,0 +1,42 @@
+import React from 'react';
+import { View, Text, StyleSheet } from 'react-native';
+
+const App = () => {
+    return (
+        <View style={styles.container}>
+            <View style={styles.viewExistente}>
+                
+            </View>
+            <View style={styles.novaView}>
+                <Text>Nova View</Text>
+            </View>
+        </View>
+    );
+};
+
+const styles = StyleSheet.create({
+    container: {
+        flexDirection: 'row', // Alinha as views lado a lado
+        justifyContent: 'space-between', // Espaçamento entre as views
+        padding: 10,
+    },
+    viewExistente: {
+        flex: 1, // Ocupa 50% do espaço
+        marginRight: 10, // Espaço à direita
+        padding: 20,
+        backgroundColor: '#f9f9f9',
+        borderRadius: 5,
+        borderColor: '#ccc',
+        borderWidth: 1,
+    },
+    novaView: {
+        flex: 1, // Ocupa 50% do espaço
+        padding: 20,
+        backgroundColor: '#e0f7fa',
+        borderRadius: 5,
+        borderColor: '#ccc',
+        borderWidth: 1,
+    },
+});
+
+export default App;
